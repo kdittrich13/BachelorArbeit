@@ -1,0 +1,16 @@
+# maestro_animation.yaml
+
+appId: ${appId}
+---
+- launchApp
+- assertVisible: "Animation"
+- tapOn: "Animation"
+- assertVisible: "Animation"
+- repeat:
+    times: 5
+    commands:
+    - tapOn: "Start"
+    - waitForAnimationToEnd:
+        timeout: 1400
+
+
