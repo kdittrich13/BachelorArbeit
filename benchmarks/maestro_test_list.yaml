@@ -1,6 +1,5 @@
 # maestro_test_list.yaml
 
-#appId: com.nativeandroid.benchmark
 appId: ${appId}
 ---
 - launchApp
@@ -8,11 +7,11 @@ appId: ${appId}
 - tapOn: "List"
 - assertVisible: "List"
 - repeat:
-    times: 5 # Repeat enough times to scroll to the bottom
+    times: 5
     commands:
       - swipe:
-          start: 50%, 90% # From (50% of width, 90% of height)
-          end: 50%, 10% # To (50% of width, 10% of height)
-          duration: 100 # Swipe takes 200ms, decrease to scroll faster
+          start: 50%, 90%
+          end: 50%, 10%
+          duration: 100
 
 
